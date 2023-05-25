@@ -93,7 +93,7 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var _ConsultsNum = 2;
+    var _ConsultsNum = 4;
     return SingleChildScrollView(
       child: Column(
         children: [
@@ -121,12 +121,12 @@ class Body extends StatelessWidget {
                child: Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(20.0),
                     child: Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text('08:00', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),),
-                        SizedBox(height: 5,),
-                        Text('20/05/2023', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
+                        // SizedBox(height: 5,),
+                        // Text('07/06/2023', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
                       ],
                       ),
                   ),
@@ -178,12 +178,12 @@ class Body extends StatelessWidget {
                child: Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(20.0),
                     child: Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text('09:00', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),),
-                        SizedBox(height: 5,),
-                        Text('20/05/2023', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
+                        // SizedBox(height: 5,),
+                        // Text('07/06/2023', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
                       ],
                       ),
                   ),
@@ -225,7 +225,9 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
            children: [
              TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,MaterialPageRoute(builder: (context) => ScheduleScreen()));
+              },
               child: Text(
                'See more',
                style: TextStyle(

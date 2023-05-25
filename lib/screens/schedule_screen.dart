@@ -103,7 +103,7 @@ class ScheduleScreenBody extends StatelessWidget {
       physics: BouncingScrollPhysics(),
       children: [
         CalendarTimeline(
-  initialDate: DateTime(2023, 5, 24),
+  initialDate: DateTime(2023, 6, 7),
   firstDate: DateTime(2023, 1, 1),
   lastDate: DateTime(2024, 12, 31),
   onDateSelected: (date) => print(date),
@@ -115,7 +115,234 @@ class ScheduleScreenBody extends StatelessWidget {
   dotsColor: Color(0xFF398AE5),
   // selectableDayPredicate: (date) => date.day != 23,
   locale: 'en_ISO',
-)
+),
+SizedBox(height: 20,),
+ Padding( 
+          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 10), 
+          child: Container(
+            height: 100,        
+            decoration: BoxDecoration(
+            color: Color.fromARGB(255, 229, 235, 238), 
+            borderRadius: BorderRadius.circular(12),         
+            ),
+             child: Padding(
+               padding: const EdgeInsets.all(5.0),
+               child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(20),
+                    child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('08:00', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),),
+                        // SizedBox(height: 5,),
+                        // Text('07/06/2023', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
+                      ],
+                      ),
+                  ),
+                    
+                  VerticalDivider(width:1, color: Colors.black,endIndent: 10, indent: 10, ),
+                  SizedBox(width: 10,),
+                  Column( crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Patient Name', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),),
+                      Text('Zone Industrielle le Palma, Constantine', style: TextStyle(color: Colors.black,  fontSize: 15),),
+                      Row(
+  children: [
+    Text(
+      'Finished',
+      style: TextStyle(
+        fontWeight: FontWeight.bold,
+        fontSize: 15,
+        color: Colors.green
+      ),
+    ),
+    SizedBox(width: 150,),
+    ElevatedButton(
+      onPressed: () {},
+      child: Text('View'),
+    ),
+  ],
+),
+
+
+                    ],
+                  )
+                  
+                       ],
+                       ),
+             ),
+           ),
+         ),
+        
+          Padding( 
+          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 0), 
+          child: Container(
+            height: 100,        
+            decoration: BoxDecoration(
+            color: Color.fromARGB(255, 229, 235, 238), 
+            borderRadius: BorderRadius.circular(12),         
+            ),
+             child: Padding(
+               padding: const EdgeInsets.all(5.0),
+               child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(20),
+                    child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('09:00', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),),
+                        // SizedBox(height: 5,),
+                        // Text('07/06/2023', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
+                      ],
+                      ),
+                  ),
+                    
+                  VerticalDivider(width:1, color: Colors.black,endIndent: 10, indent: 10, ),
+                  SizedBox(width: 10,),
+                  Column( crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Patient Name', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),),
+                      Text('14 rue Emir Abdelkader, 25100, El Khroub', style: TextStyle(color: Colors.black,  fontSize: 15),),
+                      Row(
+  children: [
+    Text(
+      'Scheduled',
+      style: TextStyle(
+        fontWeight: FontWeight.bold,
+        fontSize: 15,
+        color: Colors.blue
+      ),
+    ),
+    SizedBox(width: 137,),
+    ElevatedButton(
+      onPressed: () {},
+      child: Text('View'),
+    ),
+  ],
+),
+
+
+                    ],
+                  )
+                  
+                       ],
+                       ),
+             ),
+           ),
+         ),
+          Padding( 
+          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 10), 
+          child: Container(
+            height: 100,        
+            decoration: BoxDecoration(
+            color: Color.fromARGB(255, 229, 235, 238), 
+            borderRadius: BorderRadius.circular(12),         
+            ),
+             child: Padding(
+               padding: const EdgeInsets.all(5.0),
+               child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(20),
+                    child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('10:00', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),),
+                        // SizedBox(height: 5,),
+                        // Text('07/06/2023', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
+                      ],
+                      ),
+                  ),
+                    
+                  VerticalDivider(width:1, color: Colors.black,endIndent: 10, indent: 10, ),
+                  SizedBox(width: 10,),
+                  Column( crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Patient Name', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),),
+                      Text('4bd Ammar Boughaba, 25000, Constantine', style: TextStyle(color: Colors.black,  fontSize: 15),),
+                      Row(
+  children: [
+    Text(
+      'Scheduled',
+      style: TextStyle(
+        fontWeight: FontWeight.bold,
+        fontSize: 15,
+        color: Colors.blue
+      ),
+    ),
+    SizedBox(width: 136,),
+    ElevatedButton(
+      onPressed: () {},
+      child: Text('View'),
+    ),
+  ],
+),
+
+
+                    ],
+                  )
+                  
+                       ],
+                       ),
+             ),
+           ),
+         ),
+        
+          Padding( 
+          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 0), 
+          child: Container(
+            height: 100,        
+            decoration: BoxDecoration(
+            color: Color.fromARGB(255, 229, 235, 238), 
+            borderRadius: BorderRadius.circular(12),         
+            ),
+             child: Padding(
+               padding: const EdgeInsets.all(5.0),
+               child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(20),
+                    child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('11:00', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),),
+                        // SizedBox(height: 5,),
+                        // Text('07/06/2023', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
+                      ],
+                      ),
+                  ),
+                    
+                  VerticalDivider(width:1, color: Colors.black,endIndent: 10, indent: 10, ),
+                  SizedBox(width: 10,),
+                  Column( crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Patient Name', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),),
+                      Text('Cité Boussouf n°302, 25000, Constantine', style: TextStyle(color: Colors.black,  fontSize: 15),),
+                      Row(
+  children: [
+    Text(
+      'Cancelled',
+      style: TextStyle(
+        fontWeight: FontWeight.bold,
+        fontSize: 15,
+        color: Colors.red
+      ),
+    ),
+    SizedBox(width: 140,),
+    ElevatedButton(
+      onPressed: () {},
+      child: Text('View'),
+    ),
+  ],
+),
+
+
+                    ],
+                  )
+                  
+                       ],
+                       ),
+             ),
+           ),
+         ),
       ],
     );
   }
