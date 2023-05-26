@@ -6,6 +6,8 @@ import 'package:sheesh/screens/profile_screen.dart';
 import 'package:sheesh/screens/schedule_screen.dart';
 import '../widgets/circle_button.dart';
 import '../widgets/search_text_field.dart';
+import 'appointment1_screen.dart';
+import 'appt2_screen.dart';
 
 class FeaturedScreen extends StatefulWidget {
   const FeaturedScreen({super.key});
@@ -149,7 +151,9 @@ class Body extends StatelessWidget {
     ),
     SizedBox(width: 150,),
     ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => FirstApptScreen()));
+      },
       child: Text('View'),
     ),
   ],
@@ -206,7 +210,9 @@ class Body extends StatelessWidget {
     ),
     SizedBox(width: 137,),
     ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => SecondApptScreen()));
+      },
       child: Text('View'),
     ),
   ],

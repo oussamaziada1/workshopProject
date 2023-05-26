@@ -11,6 +11,11 @@ import '../widgets/button_widget.dart';
 import '../widgets/circle_button.dart';
 import '../widgets/profile_widget.dart';
 import 'homepage.dart';
+import 'appointment1_screen.dart';
+import 'appt2_screen.dart';
+import 'appt3_screen.dart';
+import 'appt4_screen.dart';
+
 
 class ScheduleScreen extends StatefulWidget {
   const ScheduleScreen({Key? key});
@@ -158,7 +163,9 @@ SizedBox(height: 20,),
     ),
     SizedBox(width: 150,),
     ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => FirstApptScreen()));
+      },
       child: Text('View'),
     ),
   ],
@@ -215,7 +222,9 @@ SizedBox(height: 20,),
     ),
     SizedBox(width: 137,),
     ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => SecondApptScreen()));
+      },
       child: Text('View'),
     ),
   ],
@@ -271,7 +280,9 @@ SizedBox(height: 20,),
     ),
     SizedBox(width: 136,),
     ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => ThirdApptScreen()));
+      },
       child: Text('View'),
     ),
   ],
@@ -328,7 +339,9 @@ SizedBox(height: 20,),
     ),
     SizedBox(width: 140,),
     ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => FourthApptScreen()));
+      },
       child: Text('View'),
     ),
   ],
