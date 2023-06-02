@@ -138,7 +138,7 @@ class FourthApptScreenBody extends StatelessWidget {
                     padding: const EdgeInsets.all(10.0),
                     child: Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                       CircleAvatar(backgroundImage: AssetImage('assets/politecat.jpg'),maxRadius: 30,)
+                       CircleAvatar(backgroundImage: AssetImage('assets/avatar.png'),maxRadius: 30,)
                         // SizedBox(height: 5,),
                         // Text('07/06/2023', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
                       ],
@@ -309,7 +309,7 @@ class FourthApptScreenBody extends StatelessWidget {
                       SizedBox(height: 10,),
                       Text('E-mail',style: TextStyle(fontSize: 16),),
                       SizedBox(height: 10,),
-                      Text('patient4@bogus.com',style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
+                      Text('patient4@gmail.com',style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
                     ],
                   )
                 ],

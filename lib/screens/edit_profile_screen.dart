@@ -43,7 +43,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                  image: AssetImage('assets/cover3.jpg'),
+                  image: AssetImage('assets/avatar.png'),
                   fit: BoxFit.cover,
                 ),
               ),

@@ -167,7 +167,7 @@ class _SecondApptScreenBodyState extends State<SecondApptScreenBody> {
                     padding: const EdgeInsets.all(10.0),
                     child: Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                       CircleAvatar(backgroundImage: AssetImage('assets/smudge.jpg'),maxRadius: 30,)
+                       CircleAvatar(backgroundImage: AssetImage('assets/avatar.png'),maxRadius: 30,)
                         // SizedBox(height: 5,),
                         // Text('07/06/2023', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
                       ],
@@ -338,7 +338,7 @@ class _SecondApptScreenBodyState extends State<SecondApptScreenBody> {
                       SizedBox(height: 10,),
                       Text('E-mail',style: TextStyle(fontSize: 16),),
                       SizedBox(height: 10,),
-                      Text('patient2@bogus.com',style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
+                      Text('patient2@gmail.com',style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
                     ],
                   )
                 ],

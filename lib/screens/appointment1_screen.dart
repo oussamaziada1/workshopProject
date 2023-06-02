@@ -143,7 +143,7 @@ class _FirstApptScreenBodyState extends State<FirstApptScreenBody> {
                     padding: const EdgeInsets.all(10.0),
                     child: Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                       CircleAvatar(backgroundImage: AssetImage('assets/cover3.jpg'),maxRadius: 30,)
+                       CircleAvatar(backgroundImage: AssetImage('assets/avatar.png'),maxRadius: 30,)
                         // SizedBox(height: 5,),
                         // Text('07/06/2023', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
                       ],
@@ -314,7 +314,7 @@ class _FirstApptScreenBodyState extends State<FirstApptScreenBody> {
                       SizedBox(height: 10,),
                       Text('E-mail',style: TextStyle(fontSize: 16),),
                       SizedBox(height: 10,),
-                      Text('patient1@bogus.com',style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
+                      Text('patient1@gmail.com',style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
                     ],
                   )
                 ],
