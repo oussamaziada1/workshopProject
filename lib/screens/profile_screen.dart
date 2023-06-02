@@ -91,9 +91,14 @@ class CustomAppBar extends StatelessWidget {
   }
 }
 
-class ProfileScreenBody extends StatelessWidget {
+class ProfileScreenBody extends StatefulWidget {
   const ProfileScreenBody({Key? key});
 
+  @override
+  State<ProfileScreenBody> createState() => _ProfileScreenBodyState();
+}
+
+class _ProfileScreenBodyState extends State<ProfileScreenBody> {
   @override
   Widget build(BuildContext context) {
     final user = UserPreferences.myUser;
@@ -134,9 +139,16 @@ class ProfileScreenBody extends StatelessWidget {
         Divider(height: 10,color:Colors.black54 ,endIndent: 20,indent: 20,),
         const SizedBox(height: 10),
         buildBirthDate(user),
+        Divider(height: 10,color:Colors.black54 ,endIndent: 20,indent: 20,),
+        const SizedBox(height: 10),
+        buildYearsExp(user),
+        Divider(height: 10,color:Colors.black54 ,endIndent: 20,indent: 20,),
+        const SizedBox(height: 10),
+        buildInstitution(user),
       ],
     );
   }
+
 Widget buildEditButton(BuildContext context) => ButtonWidget(
   text: 'Edit info',
   
@@ -144,7 +156,6 @@ Widget buildEditButton(BuildContext context) => ButtonWidget(
     Navigator.push(context, MaterialPageRoute(builder: (context) => EditProfilePage()));
   },
 );
-
 
   Widget buildName(User user) => Column(
         children: [
@@ -166,17 +177,18 @@ Widget buildEditButton(BuildContext context) => ButtonWidget(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'About',
+              'Title',
               style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
             Text(
-              user.description,
+              user.title,
               style: TextStyle(fontSize: 16, height: 1.4),
             ),
           ],
         ),
       );
+
        Widget buildSpecialty(User user) => Container(
         padding: const EdgeInsets.symmetric(horizontal: 35),
         child: Column(
@@ -269,4 +281,39 @@ Widget buildEditButton(BuildContext context) => ButtonWidget(
         ),
       );
 
+      Widget buildYearsExp(User user) => Container(
+        padding: const EdgeInsets.symmetric(horizontal: 35),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Years Experience',
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              user.yearsExp,
+              style: TextStyle(fontSize: 16, height: 1.4),
+            ),
+          ],
+        ),
+      );
+
+      Widget buildInstitution(User user) => Container(
+        padding: const EdgeInsets.symmetric(horizontal: 35),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Workplace',
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              user.institution,
+              style: TextStyle(fontSize: 16, height: 1.4),
+            ),
+          ],
+        ),
+      );
 }

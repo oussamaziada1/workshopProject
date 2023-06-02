@@ -1,5 +1,23 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sheesh">
+        package="com.example.sheesh">
+        <queries>
+            <intent>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="https"/>
+            </intent>
+            <intent>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="http"/>
+            </intent>
+        <intent>
+                <action android:name="android.intent.action.DIAL"/>
+                <data android:scheme="tel"/>
+            </intent>
+            <intent>
+                <action android:name="android.intent.action.SEND"/>
+                <data android:mimeType="*/*"/>
+            </intent>
+        </queries>
     <application
         android:label="sheesh"
         android:name="${applicationName}"
@@ -31,4 +49,5 @@
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
+   
 </manifest>

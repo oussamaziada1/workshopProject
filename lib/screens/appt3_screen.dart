@@ -177,9 +177,10 @@ class _ThirdApptScreenBodyState extends State<ThirdApptScreenBody> {
                     ],
                   ),
                   SizedBox(width: 110,),
-                  IconButton(onPressed:()  {
-                   
-                  },
+                  IconButton(onPressed: () async {
+              final Uri number = Uri.parse('tel: +213791284657');
+               await launchUrl(number);
+             },
                    icon: Icon(Icons.call, size: 28,color: Colors.green,))
                   
                        ],
@@ -266,7 +267,7 @@ class _ThirdApptScreenBodyState extends State<ThirdApptScreenBody> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text('Arrival (Date & Time)', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
-                      Text('07/06/2023 10:00')
+                      Text('DD/MM/YYYY 10:00')
                     ],
                    ),
                  ),

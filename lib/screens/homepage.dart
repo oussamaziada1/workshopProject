@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sheesh/screens/patient_list.dart';
 
 import 'featured_screen.dart';
 import 'profile_screen.dart';
@@ -16,6 +17,7 @@ class _MainHomePageState extends State<MainHomePage> {
 
   static const List<Widget> _widgetOptions = <Widget>[
     FeaturedScreen(),
+    PatientList(),
     FeaturedScreen(),
     ProfileScreen(),
   ];
@@ -49,12 +51,12 @@ class _MainHomePageState extends State<MainHomePage> {
               icon: Icon(Icons.people_outlined, size: 27.0, ),
               label: 'Patients' ,             
               ),
-            // BottomNavigationBarItem(
-            //   activeIcon: Icon(Icons.settings, size: 27.0,),
-            //   icon: Icon(Icons.settings_outlined, size: 27.0,),
-            //   label: 'Settings' ,
+            BottomNavigationBarItem(
+              activeIcon: Icon(Icons.settings, size: 27.0,),
+              icon: Icon(Icons.settings_outlined, size: 27.0,),
+              label: 'Settings' ,
               
-            //   ),           
+              ),           
             BottomNavigationBarItem(
               activeIcon: Icon(Icons.person, size: 27.0,),
               icon: Icon(Icons.person_outline, size: 27.0,),

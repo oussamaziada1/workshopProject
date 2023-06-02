@@ -8,6 +8,7 @@ import '../widgets/circle_button.dart';
 import '../widgets/search_text_field.dart';
 import 'appointment1_screen.dart';
 import 'appt2_screen.dart';
+import 'patient_list.dart';
 
 class FeaturedScreen extends StatefulWidget {
   const FeaturedScreen({super.key});
@@ -305,6 +306,7 @@ class Body extends StatelessWidget {
     GestureDetector(
       onTap: () {
         // Handle navigation for Category 3
+        Navigator.push(context,MaterialPageRoute(builder: (context) => PatientList()));
       },
       child: Container(
         decoration: BoxDecoration(

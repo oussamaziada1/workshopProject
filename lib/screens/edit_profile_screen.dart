@@ -68,13 +68,6 @@ class _EditProfilePageState extends State<EditProfilePage> {
           ),
           const SizedBox(height: 24),
           TextFieldWidget(
-            label: 'Description',
-            text: user.description,
-            maxLines: 5,
-            onChanged: (about) {},
-          ),
-          const SizedBox(height: 24),
-          TextFieldWidget(
             label: 'Address',
             text: user.address,
             onChanged: (address) {},
@@ -92,6 +85,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                  
                   onChanged: (birthdate) {},
                 ),
+                
           const SizedBox(height: 50),
         ],
       ),

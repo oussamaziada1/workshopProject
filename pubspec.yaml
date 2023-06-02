@@ -40,7 +40,7 @@ dependencies:
   editable_image: ^2.0.0
   image_picker: ^0.8.7+5
   calendar_timeline: ^1.1.2
-  url_launcher: ^6.0.3
+  url_launcher: ^6.1.11
 dev_dependencies:
   
 
