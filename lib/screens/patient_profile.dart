@@ -19,6 +19,8 @@ import 'appt3_screen.dart';
 import 'appt4_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'medical_folder.dart';
+
 class PatientProfile extends StatefulWidget {
   const PatientProfile({Key? key});
 
@@ -162,7 +164,9 @@ class PatientProfileBody extends StatelessWidget {
   Tooltip(
     message: 'Medical Folder',
     child: IconButton(
-      onPressed: () {},
+      onPressed: () {
+         Navigator.push(context,MaterialPageRoute(builder: (context) => MedicalFolder()));
+      },
       icon: Icon(Icons.folder_copy, color: Color.fromARGB(255, 255, 220, 93), size: 30,),
     ),
   ),
